@@ -83,6 +83,18 @@
     box-shadow: none;
 }
 
+.separator__fullwidth{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    color:rgb(192, 201, 195);
+}
+
+.separator__fullwidth:hover{
+    color: rgb(192, 201, 195);
+}
+
 /* aside */
 
 .left__aside{
