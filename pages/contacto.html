@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MallTop - Tienda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
+
 <body>
     <div class="grid__container">
         <!--header-->
         <header class="header__top">
             <div class="header__style">
                 <div class="image__search__style">
-                    <img class="image__search__width" src="../images/logo.png" alt="logo__ppal">
+                    <img class="image__logo__width" src="../images/logo.png" alt="logo__ppal">
                 </div>
                 <div>
-                    <form class="form__search">
-                        <input class="input__style" type="text" placeholder="Ingrese su busqueda...">
-                        <a href="#"><img class="search__size" src="../images/search.png" alt="lupa__busqueda"></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2 input__style" type="search" placeholder="Ingrese su busqueda..."
+                            aria-label="Search">
+                        <button class="btn btn-primary" type="submit"><img class="search__size"
+                                src="../images/search.png" alt="lupa__busqueda"></button>
                     </form>
                 </div>
-                <div>
-                    <a href="#"><img class="carrito__size" src="../images/shopping-cart.png" alt="carrito"></a>
-                    <a href="#"><img class="usuario__size" src="../images/user.png" alt="carrito"></a>
+                <div class="cartuser__container">
+                    <a class="btn btn cart__btn__color href=" #" role="button"><img class="usercart__size"
+                            src="../images/shopping-cart.png" alt="carrito"></a>
+                    <a class="btn btn-secondary" href="#" role="button"><img class="usercart__size"
+                            src="../images/user.png" alt="carrito"></a>
                 </div>
             </div>
         </header>
         <!--menu-->
-        <nav class="menu__top">
-            <ul class="contenedor__menus">
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="tienda.html">TIENDA</a></li>
-                <li><a href="galeria.html">GALERIA</a></li>
-                <li><a href="marcas.html">MARCAS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-        <!--aside-->
-        <aside class="left__aside">
-            <div class="aside__container">
-                <div>
-                    <h2>RECOMENDADOS <span class="flecha__style">></span></h2>
-                </div>
-                <div class="contenedor__recomendados">
-                    <div class="contenedor__img__aside">
-                        <img src="../images/aside__img__01.png" alt="imagen__aside01">    
-                    </div>
-                    <div class="contenedor__img__aside">
-                        <img src="../images/aside__img__02.png" alt="imagen__aside02">
-                    </div>
-                    <div class="contenedor__img__aside">
-                        <img src="../images/aside__img__03.png" alt="imagen__aside03">
-                    </div>
-                    <div class="contenedor__img__aside">
-                        <img src="../images/aside__img__04.png" alt="imagen__aside04">
-                    </div>
+        <nav class="navbar navbar-expand-lg navbar-dark menu__top">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav justify-content-center contenedor__menus">
+                        <li class="nav-link">
+                            <a href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="tienda.html">TIENDA</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="galeria.html">GALERIA</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="marcas.html">MARCAS</a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="contacto.html">CONTACTO</a>
+                        </li>
+                        <li class="nav-link separator__fullwidth">
+                            |
+                        </li>
+                        <li class="nav-link dropdown">
+                            <a class="nav-item dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                CATEGORÍAS
+                            </a>
+                            <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">AURICULARES</a></li>
+                                <li><a class="dropdown-item" href="#">DISCOS RÍGIDOS</a></li>
+                                <li><a class="dropdown-item" href="#">FUENTES</a></li>
+                                <li><a class="dropdown-item" href="#">GABINETES</a></li>
+                                <li><a class="dropdown-item" href="#">MEMORIAS RAM</a></li>
+                                <li><a class="dropdown-item" href="#">MICRÓFONOS</a></li>
+                                <li><a class="dropdown-item" href="#">MICROPROCESADORES</a></li>
+                                <li><a class="dropdown-item" href="#">MONITORES</a></li>
+                                <li><a class="dropdown-item" href="#">MOUSE</a></li>
+                                <li><a class="dropdown-item" href="#">PARLANTES</a></li>
+                                <li><a class="dropdown-item" href="#">PLACAS DE VIDEO</a></li>
+                                <li><a class="dropdown-item" href="#">PLACAS MADRES</a></li>
+                                <li><a class="dropdown-item" href="#">REFRIGERACIÓN</a></li>
+                                <li><a class="dropdown-item" href="#">TECLADOS</a></li>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </aside>
+        </nav>
+        <!--aside-->
+        <!--aside-->
+        <aside class="left__aside"></aside>
+        <aside class="right__aside"></aside>
         <!--section-->
         <section class="right__section">
             <article class="article__container">
@@ -68,60 +102,89 @@
                     <h2>CONTACTANOS <span class="flecha__style">></span></h2>
                 </div>
                 <div class="contenedor__destacados">
-                    <div class="contenedor__formcontacto">
-                        <form class="formulario__contacto">
-                            <div>
-                                <h4>Rellena el siguiente formulario y nos pondremos en contacto lo más pronto posible</h4>
+                    <div class="card mb-3 bg__contactcard border-0">
+                        <div class="row align-items-center">
+                            <div class="col-md-4 text-center">
+                                <p class="left__textcontact">Por favor rellena el siguiente formulario para que podamos ponernos en contacto contigo.</p>
+                                <p class="left__textcontact">Normalmente respondemos en minutos, si no recibes una respuesta pronto por favor utiliza otros medios de contacto.</p>
                             </div>
-                            <div class="items__formulario">
-                                <label for="nombreyapellido">Nombre y apellido</label>
-                                <input id="nombreyapellido" type="text">
+                            <div class="col-md-8 border-start border-1 border-secondary">
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="inputnombre" class="form-label">Nombre y apellido:</label>
+                                            <input type="text" class="form-control" id="inputnombre">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inputemail" class="form-label">E-mail:</label>
+                                            <input type="email" class="form-control" id="inputemail">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inputtelefono" class="form-label">Teléfono:</label>
+                                            <input type="text" class="form-control" id="inputtelefono">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="selectmotivo" class="form-label">Motivo:</label>
+                                            <select class="form-select" id="selectmotivo">
+                                                <option selected disabled>Seleccione una opción</option>
+                                                <option value="1">Presupuestos - Formas de pago</option>
+                                                <option value="2">Envios - Seguimientos</option>
+                                                <option value="3">Garantías - Devoluciones</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="inputcomentarios" class="form-label">Comentarios:</label>
+                                            <textarea class="form-control" id="inputcomentarios" rows="8"></textarea>
+                                        </div>
+                                    </form>
+                                </div>
                             </div>
-                            <div class="items__formulario">
-                                <label for="email">E-mail</label>
-                                <input id="email" type="email">
-                            </div>
-                            <div class="items__formulario">
-                                <label for="telefono">Telefono</label>
-                                <input id="telefono" type="text">
-                            </div>
-                            <div class="items__formulario">
-                                <label for="comentarios">Comentarios</label>
-                                <textarea id="comentarios" cols="28" rows="2"></textarea>
-                            </div>
-                            <div class="items__formulario">
-                                <button type="submit">Enviar</button>
-                            </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </article>
         </section>
         <!--footer-->
         <footer class="footer__bottom">
-            <div class="footer__container">
-                <div>
-                    <h3>Copyright © 2022 - <span class="footer__name">Mall Top</span></h3>
+            <footer class="text-center text-white">
+                <!-- Grid container -->
+                <div class="container">
+                    <!-- Section: Social media -->
+                    <section>
+                        <!-- Facebook -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><img src="../images/redessociales/facebook.png" alt="facebook"></a>
+
+                        <!-- Twitter -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><img src="../images/redessociales/twitter.png" alt="twitter"></a>
+
+                        <!-- YouTube -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><img src="../images/redessociales/youtube.png" alt="youtube"></a>
+
+                        <!-- Instagram -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><img src="../images/redessociales/instagram.png" alt="instagram"></a>
+
+                        <!-- WhatsApp -->
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
+                            data-mdb-ripple-color="dark"><img src="../images/redessociales/whatsapp.png" alt="whatsapp"></a>
+                    </section>
+                    <!-- Section: Social media -->
                 </div>
-                <div class="contenedor__redessociales">
-                    <div class="logo__redes">
-                        <a href="#"><img src="../images/redessociales/facebook.png" alt="facebook"></a>
-                    </div>
-                    <div class="logo__redes">
-                        <a href="#"><img src="../images/redessociales/instagram.png" alt="instagram"></a>
-                    </div>
-                    <div class="logo__redes">
-                        <a href="#"><img src="../images/redessociales/twitter.png" alt="twitter"></a>
-                    </div>
-                    <div class="logo__redes">
-                        <a href="#"><img src="../images/redessociales/youtube.png" alt="youtube"></a>
-                    </div>
-                    <div class="logo__redes">
-                        <a href="#"><img src="../images/redessociales/whatsapp.png" alt="whatsapp"></a>
-                    </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-center text-white bg-dark p-3 font__family__footer">
+                    © 2022 Copyright
+                    <a class="footer__name font__family__footer" href="#">MallTop</a>
                 </div>
-            </div>
-        </footer>
+                <!-- Copyright -->
+            </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 </html>
