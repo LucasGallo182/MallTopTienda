@@ -8,6 +8,7 @@
     <title>MallTop - Inicio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/36840a8ded.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
@@ -24,24 +25,22 @@
                     <form class="d-flex">
                         <input class="form-control me-2 input__style" type="search" placeholder="Ingrese su busqueda..."
                             aria-label="Search">
-                        <button class="btn search__btn__color" type="submit"><img class="search__size"
+                        <button class="btn search__btn__color" type="submit"><img class="icons__size"
                                 src="./images/search.png" alt="lupa__busqueda"></button>
                     </form>
                 </div>
                 <div class="cartuser__container">
-                    <a class="btn btn cart__btn__color" href=" #" role="button"><img class="usercart__size"
+                    <a class="btn btn cart__btn__color" href=" #" role="button"><img class="icons__size"
                             src="./images/shopping-cart.png" alt="carrito"></a>
-                    <a class="btn user__btn__color" href="#" role="button"><img class="usercart__size"
+                    <a class="btn user__btn__color" href="#" role="button"><img class="icons__size"
                             src="./images/user.png" alt="carrito"></a>
                 </div>
             </div>
         </header>
         <!--menu-->
-        <nav class="navbar navbar-expand-lg menu__top">
+        <nav class="navbar navbar-expand-lg navbar-dark menu__top">
             <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -53,7 +52,7 @@
                             <a href="./pages/tienda.html">TIENDA</a>
                         </li>
                         <li class="nav-link">
-                            <a href="./pages/galeria.html">GALERIA</a>
+                            <a href="./pages/placasdevideo.html">PLACAS DE VIDEO <span class="hot__promotional">HOT</span></a>
                         </li>
                         <li class="nav-link">
                             <a href="./pages/marcas.html">MARCAS</a>
@@ -80,7 +79,7 @@
                                 <li><a class="dropdown-item" href="#">MONITORES</a></li>
                                 <li><a class="dropdown-item" href="#">MOUSE</a></li>
                                 <li><a class="dropdown-item" href="#">PARLANTES</a></li>
-                                <li><a class="dropdown-item" href="#">PLACAS DE VIDEO</a></li>
+                                <li><a class="dropdown-item" href="./pages/placasdevideo.html">PLACAS DE VIDEO</a></li>
                                 <li><a class="dropdown-item" href="#">PLACAS MADRES</a></li>
                                 <li><a class="dropdown-item" href="#">REFRIGERACIÓN</a></li>
                                 <li><a class="dropdown-item" href="#">TECLADOS</a></li>
@@ -141,52 +140,76 @@
                 </div>
                 <div class="contenedor__destacados">
                     <div class="contenedor__producto">
-                        <label for="gabinetephanteks">GABINETE PHANTEKS ECLIPSE P400S</label>
-                        <img class="img__scale" id="gabinetephanteks" src="./images/article__img__01.png" alt="gabinetephanteks">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/placasdevideo/palit-gtx1050ti.png" alt="palit-gtx1050ti">
+                            <div class="box__producto">
+                                <p>PLACA DE VIDEO PALIT NVIDIA GEFORCE GTX 1050TI STORMX 4GB GDDR5</p>
+                                <p id="p__style">$39.995</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="mouseredragon">MOUSE REDRAGON GRIFFIN M607</label>
-                        <img class="img__scale" id="mouseredragon" src="./images/article__img__02.png" alt="mouseredragon">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__02.png" alt="mouseredragon">
+                            <div class="box__producto">
+                                <p>MOUSE GAMER REDRAGON GRIFFIN M607 BLACK</p>
+                                <p id="p__style">$2.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="aurishyperx">AURIS HYPERX CLOUD FLIGHT S</label>
-                        <img class="img__scale" id="aurishyperx" src="./images/article__img__03.png" alt="aurishyperx">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__03.png" alt="aurishyperx">
+                            <div class="box__producto">
+                                <p>AURICULARES GAMER INALAMBRICOS HYPERX CLOUD FLIGHT S</p>
+                                <p id="p__style">$15.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="monitorasus">MONITOR ASUS TUF VG24VQ</label>
-                        <img class="img__scale" id="monitorasus" src="./images/article__img__04.png" alt="monitorasus">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__04.png" alt="monitorasus">
+                            <div class="box__producto">
+                                <p>MONITOR ASUS TUF GAMING 23.6" VG24VQ BLACK</p>
+                                <p id="p__style">$45.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="tecladohyperx">TECLADO HYPERX ALLOY CORE</label>
-                        <img class="img__scale" id="tecladohyperx" src="./images/article__img__05.png" alt="tecladohyperx">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__05.png" alt="tecladohyperx">
+                            <div class="box__producto">
+                                <p>TECLADO GAMER HYPERX ALLOY CORE RGB QWERTY RGB</p>
+                                <p id="p__style">$10.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="parlanteshp">PARLANTES HP LED DHE6000</label>
-                        <img class="img__scale" id="parlanteshp" src="./images/article__img__06.png" alt="parlanteshp">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__06.png" alt="parlanteshp">
+                            <div class="box__producto">
+                                <p>PARLANTES MULTIMEDIA HP DHE6000 RGB USB 7.1</p>
+                                <p id="p__style">$2.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="microfohyperx">MICROFONO HYPERX SOLOCAST</label>
-                        <img class="img__scale" id="microfohyperx" src="./images/article__img__07.png" alt="microfohyperx">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__07.png" alt="microfohyperx">
+                            <div class="box__producto">
+                                <p>MICROFONO HYPERX SOLOCAST CONDENSADOR CARDIOIDE BLACK</p>
+                                <p id="p__style">$7.999</p>
+                            </div>
+                        </a>
                     </div>
                     <div class="contenedor__producto">
-                        <label for="webcamlogitech">WEBCAM LOGITECH C170 BLACK</label>
-                        <img class="img__scale" id="webcamlogitech" src="./images/article__img__08.png" alt="webcamlogitech">
-                        <a class="boton__carrito__estilo" href="#">Añadir al carrito</a>
-                        <a class="boton_descripcion_estilo" href="#">Ver descripción</a>
+                        <a href="#">
+                            <img class="img__scale" src="./images/article__img__08.png" alt="webcamlogitech">
+                            <div class="box__producto">
+                                <p>WEBCAM LOGITECH C170 HD 720P 5MPX BLACK</p>
+                                <p id="p__style">$7.999</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <!--REVIEWS-->
@@ -218,44 +241,101 @@
                 </div>
             </article>
         </section>
-        <!--footer-->
-        <footer class="footer__bottom">
-            <footer class="text-center text-white">
-                <!-- Grid container -->
-                <div class="container">
-                    <!-- Section: Social media -->
-                    <section>
-                        <!-- Facebook -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="./images/redessociales/facebook.png" alt="facebook"></a>
+        <!-- Footer -->
+        <footer class="text-center footer__bottom">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-twitter"></i></a>
+                    <!-- YouTube -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-google"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- Whatsapp -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-whatsapp"></i></a>
+                </section>
+                <section>
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">CONTACTO</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    Teléfono (0341) 4200000
+                                </li>
+                                <li>
+                                    Whatsapp (03476) 150000000
+                                </li>
+                                <li>
+                                    contacto@malltop.com
+                                </li>
+                                <li>
+                                    Lun. a Sab. de 9h a 18h.
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column 2-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">SUSCRIBÍTE</h5>
+                            <ul class="list-unstyled mb-0 text-center">
+                                <li>
+                                    Ingresá tu e-mail y recibí las mejores ofertas
+                                </li>
+                                <li>
+                                    &nbsp;
+                                </li>
+                                <li>
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Ingrese su e-mail..."
+                                            aria-label="Search">
+                                        <button class="btn btn__suscribe" type="submit"><img class="icons__size"
+                                            src="./images/right-arrow.png" alt="lupa__busqueda"></button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column 3-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">INFORMACIÓN ÚTIL</h5>
+                            <ul class="list-unstyled mb-0 text-center">
+                                <li>
+                                    <a href="./pages/terms.html">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/quienes-somos.html">Quiénes somos</a>
+                                </li>
+                                <li>
+                                    <a href="./pages/faq.html">Preguntas frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="https://0x0e8bwk472.typeform.com/to/YDGjIvcC" target="blank_">Botón de arrepentimiento</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
 
-                        <!-- Twitter -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="./images/redessociales/twitter.png" alt="twitter"></a>
-
-                        <!-- YouTube -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="./images/redessociales/youtube.png" alt="youtube"></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="./images/redessociales/instagram.png" alt="instagram"></a>
-
-                        <!-- WhatsApp -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="./images/redessociales/whatsapp.png" alt="whatsapp"></a>
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center text-white bg-dark p-3 font__family__footer">
-                    © 2022 Copyright
-                    <a class="footer__name font__family__footer" href="#">MallTop</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="#">MallTop</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

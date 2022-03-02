@@ -7,6 +7,7 @@
     <title>MallTop - Tienda</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/36840a8ded.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
@@ -20,13 +21,17 @@
                 </div>
                 <div>
                     <form class="d-flex">
-                        <input class="form-control me-2 input__style" type="search" placeholder="Ingrese su busqueda..." aria-label="Search">
-                        <button class="btn btn-primary" type="submit"><img class="search__size" src="../images/search.png" alt="lupa__busqueda"></button>
+                        <input class="form-control me-2 input__style" type="search" placeholder="Ingrese su busqueda..."
+                            aria-label="Search">
+                        <button class="btn search__btn__color" type="submit"><img class="icons__size"
+                                src="../images/search.png" alt="lupa__busqueda"></button>
                     </form>
                 </div>
                 <div class="cartuser__container">
-                    <a class="btn btn cart__btn__color href="#" role="button"><img class="usercart__size" src="../images/shopping-cart.png" alt="carrito"></a>
-                    <a class="btn btn-secondary" href="#" role="button"><img class="usercart__size" src="../images/user.png" alt="carrito"></a>
+                    <a class="btn btn cart__btn__color" href=" #" role="button"><img class="icons__size"
+                            src="../images/shopping-cart.png" alt="carrito"></a>
+                    <a class="btn user__btn__color" href="#" role="button"><img class="icons__size"
+                            src="../images/user.png" alt="carrito"></a>
                 </div>
             </div>
         </header>
@@ -45,7 +50,7 @@
                             <a href="tienda.html">TIENDA</a>
                         </li>
                         <li class="nav-link">
-                            <a href="galeria.html">GALERIA</a>
+                            <a href="placasdevideo.html">PLACAS DE VIDEO <span class="hot__promotional">HOT</span></a>
                         </li>
                         <li class="nav-link">
                             <a href="marcas.html">MARCAS</a>
@@ -72,7 +77,7 @@
                                 <li><a class="dropdown-item" href="#">MONITORES</a></li>
                                 <li><a class="dropdown-item" href="#">MOUSE</a></li>
                                 <li><a class="dropdown-item" href="#">PARLANTES</a></li>
-                                <li><a class="dropdown-item" href="#">PLACAS DE VIDEO</a></li>
+                                <li><a class="dropdown-item" href="placasdevideo.html">PLACAS DE VIDEO</a></li>
                                 <li><a class="dropdown-item" href="#">PLACAS MADRES</a></li>
                                 <li><a class="dropdown-item" href="#">REFRIGERACIÓN</a></li>
                                 <li><a class="dropdown-item" href="#">TECLADOS</a></li>
@@ -93,87 +98,144 @@
                     <h2>MARCAS QUE TRABAJAMOS <span class="flecha__style">></span></h2>
                 </div>
                 <div class="contenedor__destacados">
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="logitech">LOGITECH</label>
                         <img id="logitech" src="../images/marcas/logitech.png" alt="logitech">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="asus">ASUS</label>
                         <img id="asus" src="../images/marcas/asus.png" alt="asus">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="hyperx">HYPERX</label>
                         <img id="hyperx" src="../images/marcas/hyperx.png" alt="hyperx">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="redragon">REDRAGON</label>
                         <img id="redragon" src="../images/marcas/redragon.png" alt="redragon">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="evga">EVGA</label>
                         <img id="evga" src="../images/marcas/evga.png" alt="evga">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="zotac">ZOTAC</label>
                         <img id="zotac" src="../images/marcas/zotac.png" alt="zotac">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="phanteks">PHANTEKS</label>
                         <img id="phanteks" src="../images/marcas/phanteks.png" alt="phanteks">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="msi">MSI</label>
                         <img id="msi" src="../images/marcas/msi.png" alt="msi">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="amd">AMD</label>
                         <img id="amd" src="../images/marcas/amd.png" alt="amd">
                     </div>
-                    <div class="contenedor__producto">
+                    <div class="contenedor__marcas">
                         <label for="intel">INTEL</label>
                         <img id="intel" src="../images/marcas/intel.png" alt="intel">
                     </div>
                 </div>
             </article>
         </section>
-        <!--footer-->
-        <footer class="footer__bottom">
-            <footer class="text-center text-white">
-                <!-- Grid container -->
-                <div class="container">
-                    <!-- Section: Social media -->
-                    <section>
-                        <!-- Facebook -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="../images/redessociales/facebook.png" alt="facebook"></a>
+        <!-- Footer -->
+        <footer class="text-center footer__bottom">
+            <!-- Grid container -->
+            <div class="container p-4">
+                <!-- Section: Social media -->
+                <section class="mb-4">
+                    <!-- Facebook -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <!-- Twitter -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-twitter"></i></a>
+                    <!-- YouTube -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-google"></i></a>
+                    <!-- Instagram -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-instagram"></i></a>
+                    <!-- Whatsapp -->
+                    <a class="btn btn__link__footer btn-floating m-1" href="#" role="button"><i
+                            class="fab fa-whatsapp"></i></a>
+                </section>
+                <section>
+                    <!--Grid row-->
+                    <div class="row">
+                        <!--Grid column-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">CONTACTO</h5>
+                            <ul class="list-unstyled mb-0">
+                                <li>
+                                    Teléfono (0341) 4200000
+                                </li>
+                                <li>
+                                    Whatsapp (03476) 150000000
+                                </li>
+                                <li>
+                                    contacto@malltop.com
+                                </li>
+                                <li>
+                                    Lun. a Sab. de 9h a 18h.
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column 2-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">SUSCRIBÍTE</h5>
+                            <ul class="list-unstyled mb-0 text-center">
+                                <li>
+                                    Ingresá tu e-mail y recibí las mejores ofertas
+                                </li>
+                                <li>
+                                    &nbsp;
+                                </li>
+                                <li>
+                                    <form class="d-flex">
+                                        <input class="form-control me-2" type="search" placeholder="Ingrese su e-mail..."
+                                            aria-label="Search">
+                                        <button class="btn btn__suscribe" type="submit"><img class="icons__size"
+                                            src="./images/right-arrow.png" alt="lupa__busqueda"></button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--Grid column 3-->
+                        <div class="col-lg-4 col-md-6 mb-4 mb-md-0 align-self-center">
+                            <h5 class="text-uppercase colfooter__text">INFORMACIÓN ÚTIL</h5>
+                            <ul class="list-unstyled mb-0 text-center">
+                                <li>
+                                    <a href="terms.html">Términos y condiciones</a>
+                                </li>
+                                <li>
+                                    <a href="quienes-somos.html">Quiénes somos</a>
+                                </li>
+                                <li>
+                                    <a href="faq.html">Preguntas frecuentes</a>
+                                </li>
+                                <li>
+                                    <a href="https://0x0e8bwk472.typeform.com/to/YDGjIvcC" target="blank_">Botón de arrepentimiento</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--Grid row-->
+                </section>
+                <!-- Section: Links -->
+            </div>
+            <!-- Grid container -->
 
-                        <!-- Twitter -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="../images/redessociales/twitter.png" alt="twitter"></a>
-
-                        <!-- YouTube -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="../images/redessociales/youtube.png" alt="youtube"></a>
-
-                        <!-- Instagram -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="../images/redessociales/instagram.png" alt="instagram"></a>
-
-                        <!-- WhatsApp -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 logo__redes" href="#!" role="button"
-                            data-mdb-ripple-color="dark"><img src="../images/redessociales/whatsapp.png" alt="whatsapp"></a>
-                    </section>
-                    <!-- Section: Social media -->
-                </div>
-                <!-- Grid container -->
-
-                <!-- Copyright -->
-                <div class="text-center text-white bg-dark p-3 font__family__footer">
-                    © 2022 Copyright
-                    <a class="footer__name font__family__footer" href="#">MallTop</a>
-                </div>
-                <!-- Copyright -->
-            </footer>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2022 Copyright:
+                <a class="text-white" href="#">MallTop</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
