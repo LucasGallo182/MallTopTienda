@@ -1,0 +1,29 @@
+.footer__bottom{
+    background-color: $colorheaderfooter;
+    color: rgb(192, 201, 195);
+    grid-area: footer;
+}
+.colfooter__text{
+    color:rgb(57, 185, 68);
+}
+.text-white{
+    text-decoration: none;
+}
+.text-center{
+    li{
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color:rgb(192, 201, 195);
+            &:hover{
+                color: rgb(57, 185, 68);
+            }
+        }
+    }
+}
+.btn__suscribe{
+    background-color: rgb(57, 185, 68);
+}
+.btn__link__footer{
+    background-color: rgb(57, 185, 68);
+}
