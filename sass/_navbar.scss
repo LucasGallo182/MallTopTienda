@@ -3,7 +3,6 @@
     grid-area: nav;
     padding: 15px;
 }
-
 .contenedor__menus{
     width: 100%;
     display: flex;
@@ -17,30 +16,36 @@
             font-family: 'Oswald', sans-serif;
             color:rgb(192, 201, 195);
             &:hover{
-                color: rgb(57, 185, 68);
+                $botonRedes:verde;
+                @if $botonRedes == azul{
+                    color: rgb(60, 129, 207);
+                } @else if $botonRedes == rojo{
+                    color: rgb(172, 50, 50);
+                } @else if $botonRedes == verde{
+                    color: rgb(57, 185, 68);
+                } @else {
+                    color: rgb(174, 184, 174);
+                }
             }
         }
     }
 }
-
 .navbar-toggler{
     &:focus{
         outline: none;
         box-shadow: none;
     }
 }
-
 .separator__fullwidth{
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: $fontgeneral;
     color:rgb(192, 201, 195);
     &:hover{
         color: rgb(192, 201, 195);
     }
 }
-
 .hot__promotional{
     font-size: 10px;
     color: rgb(241, 69, 69);
@@ -48,7 +53,6 @@
     display: inline-block;
     animation: movimiento 2s ease-in-out infinite;
 }
-
 @keyframes movimiento{
     0%,100%{
         transform: none;

@@ -1,0 +1,33 @@
+.header__top{
+    background-color:$colorheaderfooter;
+    grid-area: header;
+}
+.header__style{
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.image__logo__width{
+    width: 18.75rem;
+}
+.input__style{
+    width: 25vw;
+}
+.search__btn__color{
+    background-color: rgb(133, 187, 231);
+}
+.cart__btn__color{
+    background-color:rgb(57, 185, 68);
+}
+.user__btn__color{
+    background-color: rgb(105, 105, 102);
+}
+.icons__size{
+    width: 26px;
+    padding: 1px;
+}
+.cartuser__container{
+    padding: 10px;
+}

@@ -1,0 +1,15 @@
+.contenedor__marcas{
+    width: 320px;
+    height: 280px;
+    padding: 10px;
+    border: solid 1px rgb(139, 134, 134);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    label{
+        font-family: $fontgeneral;
+        font-weight: bold;
+        font-size: 18px;
+        color: rgb(139, 134, 134);
+    }
+}

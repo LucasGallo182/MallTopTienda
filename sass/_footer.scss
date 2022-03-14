@@ -21,9 +21,64 @@
         }
     }
 }
-.btn__suscribe{
-    background-color: rgb(57, 185, 68);
+/*mapas*/
+$redes:(
+    fb: #3A5795,
+    tt: #55ACEE,
+    yt: #CE2E2E,
+    ig: #C25E30,
+    wp: #4FCC5D,
+);
+@each $red, $color in $redes{
+    .btn--#{$red}{
+        background-color: $color;
+    }
 }
-.btn__link__footer{
-    background-color: rgb(57, 185, 68);
+/*extend*/
+.btn__footer{
+    opacity: 1.0;
+    border: 1px solid black;
+}
+.btn__footer--fb{
+    &:hover{
+    @extend .btn__footer;
+    opacity: 0.4;
+    }
+}
+.btn__footer--tt{
+    &:hover{
+    @extend .btn__footer;
+    opacity: 0.4;
+    }
+}
+.btn__footer--yt{
+    &:hover{
+    @extend .btn__footer;
+    opacity: 0.4;
+    }
+}
+.btn__footer--ig{
+    &:hover{
+    @extend .btn__footer;
+    opacity: 0.4;
+    }
+}
+.btn__footer--wp{
+    &:hover{
+    @extend .btn__footer;
+    opacity: 0.4;
+    }
+}
+/* if */
+$botonRedes:verde;
+.btn__suscribe{
+    @if $botonRedes == azul{
+        background-color: rgb(60, 129, 207);
+    } @else if $botonRedes == rojo{
+        background-color: rgb(172, 50, 50);
+    } @else if $botonRedes == verde{
+        background-color: rgb(57, 185, 68);
+    } @else {
+        background-color: rgb(174, 184, 174);
+    }
 }
