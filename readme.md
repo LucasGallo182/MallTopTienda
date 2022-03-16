@@ -45,4 +45,4 @@ $ npm run watch-css
 <li class="has-line-data" data-line-start="44" data-line-end="45">GitHub: <a href="https://github.com/LucasGallo182/MallTopTienda">https://github.com/LucasGallo182/MallTopTienda</a></li>
 <li class="has-line-data" data-line-start="45" data-line-end="46">Web: <a href="https://malltop.000webhostapp.com/">https://malltop.000webhostapp.com/</a></li>
 </ul>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body></html>
+</body></html>
