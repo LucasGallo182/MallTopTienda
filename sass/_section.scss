@@ -23,7 +23,7 @@
     width: $width;
 }
 .contenedor__producto{
-    @include size (320px, 355px);
+    @include size (320px, 410px);
     padding: 10px;
     border: solid 1px rgb(139, 134, 134);
     border-radius: 10px;
@@ -53,6 +53,8 @@
     padding: 2px;
 }
 .img__scale{
+    width: 300px;
+    height: 260px;
     transition-property: all;
     transition-duration: 1s;
     &:hover{

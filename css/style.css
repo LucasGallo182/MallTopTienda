@@ -118,7 +118,7 @@
 
 /*mixin*/
 .contenedor__producto {
-  height: 355px;
+  height: 410px;
   width: 320px;
   padding: 10px;
   border: solid 1px #8b8686;
@@ -146,6 +146,8 @@
   padding: 2px; }
 
 .img__scale {
+  width: 300px;
+  height: 260px;
   transition-property: all;
   transition-duration: 1s; }
   .img__scale:hover {

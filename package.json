@@ -7,7 +7,7 @@
     "build-css": "node-sass --include-path scss sass/style.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
-  "author": "",
+  "author": "Lucas Gallo",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^7.0.1",
@@ -296,5 +296,5 @@
     "yargs-parser": "^20.2.9",
     "yargs": "^17.3.1"
   },
-  "description": ""
+  "description": "Proyecto final para curso de desarrollo web de CoderHouseage"
 }
