@@ -1,4 +1,4 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><title>readme - Mall Top</title></head><body id="preview">
+<!DOCTYPE html><html><head><meta charset="utf-8"></head><body id="preview">
 <h1 class="code-line" data-line-start=0 data-line-end=1><a id="MallTop_0"></a>MallTop</h1>
 <h2 class="code-line" data-line-start=1 data-line-end=2><a id="Tienda_oniline_de_productos_relacionados_a_la_computacin_1"></a>Tienda oniline de productos relacionados a la computación.</h2>
 <p class="has-line-data" data-line-start="3" data-line-end="4"><a href="https://malltop.000webhostapp.com/"><img src="https://i.postimg.cc/QCtsJ54g/pngreadme.png" alt="M|MallTop"></a></p>
