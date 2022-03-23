@@ -1,0 +1,20 @@
+/*h1 main title*/
+.h1__main{
+    font-family: $fontgeneral;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 30px;
+}
+/* grid cointaner */
+.grid__container{
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 2fr 1fr 16fr 2fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "l-aside section r-aside"
+    "footer footer footer";
+}

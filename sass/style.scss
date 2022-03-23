@@ -13,30 +13,14 @@
 /* section */
 @import "section";
 
+/* producto */
+@import "producto";
+
 /* footer */
 @import "footer";
 
-/*h1 main title*/
-.h1__main{
-    font-family: $fontgeneral;
-    font-weight: bold;
-    padding: 5px;
-    font-size: 30px;
-}
-
 /* grid cointaner */
-.grid__container{
-    height: 100vh;
-    margin: 0%;
-    display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-rows: 2fr 1fr 16fr 2fr;
-    grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "l-aside section r-aside"
-    "footer footer footer";
-}
+@import "parcial";
 
 /* contacto */
 @import "contacto";
@@ -48,89 +32,4 @@
 @import "terms";
 
 /* media queries */
-
-@media all and (max-width: 768px){
-    .grid__container{
-        height: 100vh;
-        margin: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 10fr 25fr 2fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "aside"
-        "section"
-        "footer";
-    }
-
-    .image__logo__width{
-        display: none;
-    }
-
-    .separator__fullwidth{
-        display: none;
-    }
-
-    .input__style{
-        width: 50vw;
-    }
-
-    .contenedor__menus li a{
-        padding: 1rem;
-    }
-
-    .img__scale:hover{
-        transform: none;
-    }
-}
-
-@media all and (max-width: 1024px){
-    .grid__container{
-        height: 100vh;
-        margin: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 10fr 25fr 2fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "aside"
-        "section"
-        "footer";
-    }
-
-    .contenedor__menus li a{
-        padding: 14px 30px;
-    }
-    
-    .img__scale:hover{
-        transform: none;
-    }
-}
-
-@media all and (max-width: 1128px){
-    .contenedor__menus li a{
-        padding: 14px 25px;
-    }
-}
-
-@media all and (max-width: 1440px){
-    .grid__container{
-        height: 100vh;
-        margin: 0%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 2fr 10fr 25fr 2fr;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "aside"
-        "section"
-        "footer";
-    }
-
-    .img__scale:hover{
-        transform: none;
-    }
-}
+@import "mediaqueries";

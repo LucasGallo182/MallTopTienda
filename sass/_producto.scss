@@ -1,0 +1,67 @@
+.link__volver{
+    color: #21252f;
+    text-decoration: none;
+    font-family: $fontgeneral;
+    font-weight: bold;
+    padding: 5px;
+    &:hover{
+        color: #21252f;
+    }
+}
+.bg__producto{
+    background-color: rgb(230, 233, 231);
+}
+.bg__list{
+    background-color: rgb(230, 233, 231);
+}
+.contenedor__item__producto{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 10px;
+}
+.precio__style{
+    font-size: 36px;
+    font-weight: bold;
+}
+.left__textproduct__green{
+    font-size: 18px;
+    color: rgb(57, 185, 68);
+}
+.left__textproduct{
+    font-size: 18px;
+}
+.left__textpromo{
+    font-size: 12px;
+    color: rgb(139, 134, 134);
+}
+.cuotasmp__btn__color{
+    background-color: rgb(133, 187, 231);
+    font-weight: bold;
+}
+.precio__lista{
+    color:rgb(139, 134, 134);
+}
+.logo__correo{
+    width: 80px;
+}
+.comprar__btn__style{
+    background:linear-gradient(to right, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 300%;
+    font-weight: bold;
+    color: #19191a;
+    &:hover{
+        animation: botonCompra 2s infinite;
+    }
+}
+@keyframes botonCompra{
+    100%{
+        background-position: 300%;
+    }
+}
+.especificaciones__style{
+    font-weight: bold;
+    font-size: 18px;
+}
